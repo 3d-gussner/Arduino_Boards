@@ -66,8 +66,8 @@
           "category": "Contributed",
           "url": "https://raw.githubusercontent.com/3d-gussner/Arduino_Boards/V1.0.2/IDE_Board_Manager/prusa3deinsyrambo-1.0.2.tar.bz2",
           "archiveFileName": "prusa3deinsyrambo-1.0.2.tar.bz2",
-          "checksum": "SHA-256:45d26baf1f47d09b0a427bdd2d575366b787952766c086f8c80dcd802ed7df0d",
-          "size": "53568",
+          "checksum": "SHA-256:6d4b3c76cc2c6ba1100c02252e111e4ea15f74d2a7dd9fb7cceed288880c1aa1",
+          "size": "53510",
           "help": {
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
