@@ -60,7 +60,26 @@
       },
       "platforms": [
         {
-          "name": "Prusa Research AVR MK3 Einsy RAMBo",
+          "name": "Prusa Research AVR MK3/MK3S Einsy RAMBo",
+          "architecture": "avr",
+          "version": "1.0.2",
+          "category": "Contributed",
+          "url": "https://raw.githubusercontent.com/3d-gussner/Arduino_Boards/V1.0.2/IDE_Board_Manager/prusa3deinsyrambo-1.0.2.tar.bz2",
+          "archiveFileName": "prusa3deinsyrambo-1.0.2.tar.bz2",
+          "checksum": "SHA-256:45d26baf1f47d09b0a427bdd2d575366b787952766c086f8c80dcd802ed7df0d",
+          "size": "53568",
+          "help": {
+            "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
+          },
+          "boards": [
+            {
+              "name": "Original Prusa i3 MK3/MK3S Einsy RAMBo"
+            }
+          ],
+          "toolsDependencies": []
+        },
+        {
+          "name": "Prusa Research AVR MK3/MK3S Einsy RAMBo",
           "architecture": "avr",
           "version": "1.0.1",
           "category": "Contributed",
