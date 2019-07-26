@@ -16,11 +16,12 @@ prusa_einsy_rambo.upload.protocol=wiring
 prusa_einsy_rambo.upload.maximum_size=253952
 prusa_einsy_rambo.upload.speed=115200
 
+prusa_einsy_rambo.bootloader.tool=arduino:avrdude
 prusa_einsy_rambo.bootloader.low_fuses=0xFF
 prusa_einsy_rambo.bootloader.high_fuses=0xD8
 prusa_einsy_rambo.bootloader.extended_fuses=0xFD
-prusa_einsy_rambo.bootloader.path=stk500v2
-#prusa_einsy_rambo.bootloader.file=stk500boot_v2_mega2560.hex
+prusa_einsy_rambo.bootloader.path=prusa_einsy_rambo
+prusa_einsy_rambo.bootloader.file=prusa_einsy_rambo/stk500boot_v2_mega2560.hex
 prusa_einsy_rambo.bootloader.unlock_bits=0x3F
 prusa_einsy_rambo.bootloader.lock_bits=0x0F
 
