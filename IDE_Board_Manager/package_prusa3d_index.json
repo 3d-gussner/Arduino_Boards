@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "Prusa Research AVR MMU Boards",
+          "name": "Prusa Research AVR Boards",
           "architecture": "avr",
           "version": "1.0.2-a",
           "category": "Contributed",
