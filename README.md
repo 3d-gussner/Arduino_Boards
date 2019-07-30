@@ -62,7 +62,7 @@ Folder Structure:
 
     .
     ├── IDE_Boards_Manager
-    │   ├──  prusa3dboards         Please don't change that folder name when you update your Github and post a PR.
+    │   ├── prusa3dboards         Please don't change that folder name when you update your Github and post a PR.
     │   ├── bootloaders
     │       ├── prusa_einsy_rambo  Which is a clone of https://github.com/prusa3d/stk500v2-prusa 
     │       └── prusa_mm_control
