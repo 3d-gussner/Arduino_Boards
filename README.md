@@ -15,7 +15,7 @@ Prusa Research AVR Boards definitions for Arduino compatible boards manufactured
 <!--te-->
 
 
-# 1-Build
+# 1-Build environment
 ## Linux
 
 ## Windows
@@ -89,16 +89,18 @@ More information about [platforms.txt](https://github.com/arduino/Arduino/wiki/A
 More information about [package_prusa3d_index.json](https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.6.x-package_index.json-format-specification)
 
 Naming convention for version:
-<`major:#1`.`minor:#2`.`maintenance:#2`"-`devel status:0-4`-`devel build:#6`" where `-devel status` and `devel build` are optional
-`#1` = numbers 0-9
-`#2` = numbers 0-99
-`0-4`= only numbers between 0 and 4. 0=devel, 1=alpha, 2=beta, 3=pre-release, 4=release candidate
-`#4` = numbers 0-999999
+- <`major:#1`.`minor:#2`.`maintenance:#2`"-`devel status:0-4`-`devel build:#6`" where `-devel status` and `devel build` are optional
+  - `#1` = numbers 0-9
+  - `#2` = numbers 0-99
+  - `0-4`= only numbers between 0 and 4. 0=devel, 1=alpha, 2=beta, 3=pre-release, 4=release candidate
+  - `#4` = numbers 0-999999
 
 Few examples:
 
-1.0.0-0-235 Is a version in development and devel build 235.
-1.0.0       Is the frist stable version
-1.0.1       Is a stable version that was maintaind...like adding a bootloader or changing tools to existing boards
-1.1.0-3     Is a pre-release version including new boards
-1.1.0       Is the first stable version including new boards
+- 1.0.0-0-235 Is a version in development and devel build 235.
+- 1.0.0       Is the frist stable version
+- 1.0.1       Is a stable version that was maintaind...like adding a bootloader or changing tools to existing boards
+- 1.1.0-3     Is a pre-release version including new boards
+- 1.1.0       Is the first stable version including new boards
+
+
