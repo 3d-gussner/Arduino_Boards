@@ -78,15 +78,15 @@ Files:
 
     .
     ├── IDE_Boards_Manager
-    ├── boards.txt contains definitions for the boards (board name, parameters for building and uploading sketches, etc.). 
-    ├── platform.txtcontains definitions for the CPU architecture used (compiler, build process parameters, tools used for upload, etc.).
+    ├── boards.txt                  contains definitions for the boards (board name, parameters for building and uploading sketches, etc.). 
+    ├── platform.txt                contains definitions for the CPU architecture used (compiler, build process parameters, tools used for upload, etc.).
     ├── package_prusa3d_index.json
-    ├── prusa3dboards.version contains the release version numbers and is used in `Prepare-new-version.sh`. The first line is used.
+    ├── prusa3dboards.version       contains the release version numbers and is used in `Prepare-new-version.sh`. The first line is used.
     └── ...
     
-More information [boards.txt](https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification#boardstxt)
-More information [platforms.txt](https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification#platformtxt)
-More information [package_prusa3d_index.jso](https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.6.x-package_index.json-format-specification)
+More information about [boards.txt](https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification#boardstxt)
+More information about [platforms.txt](https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification#platformtxt)
+More information about [package_prusa3d_index.jso](https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.6.x-package_index.json-format-specification)
 
 Naming convention for version:
 <`major:#1`.`minor:#2`.`maintenance:#2`"-`devel status:0-4`-`devel build:#6`" where `-devel status` and `devel build` are optional
