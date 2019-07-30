@@ -108,7 +108,7 @@ After modifying the source code please follow these steps:
 - add the new version (following the naming conention) in the first line of `prusa3dboards.version`
 - run `Prepare-new-version.sh` to generate `prusa3dboards-<version>tar.bz2` and to show `sha256checksum` and `size` needed in the `package_prusa3d_index.json`
 - open `package_prusa3d_index.json`in your prefered editor (like notepad++)
-  - Directly unter
+  - Directly under
   
   ```
   {
@@ -150,7 +150,7 @@ After modifying the source code please follow these steps:
   ```
 
 
-- Copy and paste thsi section twice
+- Copy and paste this section twice
 - Modify the top one with new values
   - change `"version": "1.1.0",` `"version": "<version shown by Prepare-new-version.sh>",
   - change in `"url":` and `"archiveFileName":` the "ArchiveFileName" parts you got from `Prepare-new-version.sh`
