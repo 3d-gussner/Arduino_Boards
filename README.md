@@ -19,6 +19,7 @@ Prusa Research AVR Boards definitions for Arduino compatible boards manufactured
 ## Linux
 
 ## Windows
+Please make sure if you modify code, files, etc. that the line endings are UNIX conform (LF and not CRLF).
 ### Using Linux subsystem under Windows 10 64-bit
 _notes: Script and instructions contributed by 3d-gussner. Use at your own risk. Script downloads Arduino executables outside of Prusa control. Report problems [there.](https://github.com/3d-gussner/Arduino_Boards/issues)._
 - follow the [Microsoft guide](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
@@ -93,7 +94,7 @@ Naming convention for version:
   - `#1` = numbers 0-9
   - `#2` = numbers 0-99
   - `0-4`= only numbers between 0 and 4. 0=devel, 1=alpha, 2=beta, 3=pre-release, 4=release candidate
-  - `#4` = numbers 0-999999
+  - `#6` = numbers 0-999999
 
 Few examples:
 
@@ -103,4 +104,60 @@ Few examples:
 - 1.1.0-3     Is a pre-release version including new boards
 - 1.1.0       Is the first stable version including new boards
 
+After modifying the source code please follow these steps:
+- add the new version (following the naming conention) in the first line of `prusa3dboards.version`
+- run `Prepare-new-version.sh` to generate `prusa3dboards-<version>tar.bz2` and to show `sha256checksum` and `size` needed in the `package_prusa3d_index.json`
+- open `package_prusa3d_index.json`in your prefered editor (like notepad++)
+  - Directly unter
+  
+  ```
+  {
+  "packages": [
+    {
+      "name": "PrusaResearch",
+      "maintainer": "Prusa Research",
+      "websiteURL": "https://www.prusa3d.com/",
+      "email": "info@prusa3d.com",
+      "help": {
+        "online": "https://github.com/3d-gussner/Arduino_Boards"
+      },
+      "platforms": [
+  ```
+  you will find the latest Prusa Research AVR Boards definition ... something like this
+  ```
+         {
+          "name": "Prusa Research AVR Boards",
+          "architecture": "avr",
+          "version": "1.1.0",
+          "category": "Contributed",
+          "url": "https://raw.githubusercontent.com/3d-gussner/Arduino_Boards/V1.1.0/IDE_Board_Manager/prusa3dboards-1.1.0.tar.bz2",
+          "archiveFileName": "prusa3dboards-1.1.0.tar.bz2",
+          "checksum": "SHA-256:7d49c48d86644513bd2f2222024934e827783f9f5be160c8a1ae14e177d0393a",
+          "size": "120855",
+          "help": {
+            "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
+          },
+          "boards": [
+            {
+              "name": "Original Prusa i3 MK3 Multi Material 2.0 upgrade"
+            },
+            {
+              "name": "Original Prusa i3 MK3/MK3S Einsy RAMBo"
+            }
+          ],
+          "toolsDependencies": []
+        },
+```
+  - Copy and paste thsi section twice
+  - Modify the top one with new values
+    - change `"version": "1.1.0",` `"version": "<version shown by Prepare-new-version.sh>",
+    - change in `"url":` and `"archiveFileName":` the "ArchiveFileName" parts you got from `Prepare-new-version.sh`
+    - if you have your own github for of this repository and you made a new worktree/branch to test your code you should not forget to modify the `"url":` to your `branch`
+    - change in `"checksum": ` the "SHA256 checksum" you got from `Prepare-new-version.sh`
+    - change in `"size":` the "Size" you got from `Prepare-new-version.sh`
+  - double check the syntax/format of the JSON file. In Notepad++ makes it is quite easy by using the [+] and [-] to see if your changes are good.
+
+When you have an own github and work localy use `git status` to verify your status.
+- You may need to use `git add IDE_Board_Manager/prusa3dboards-<version>.tar.bz2`
+- You need to commit your changes with `git commit -a`. Please try to document your changes as detailed as possible
 
