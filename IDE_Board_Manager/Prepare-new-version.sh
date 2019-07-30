@@ -19,8 +19,12 @@ tar -cjf prusa3dboards-$VERSION.tar.bz2 prusa3dboards-$VERSION
 mv prusa3dboards-$VERSION prusa3dboards
 # get size of the compressed file for JSO
 SIZE=$(wc -c prusa3dboards-$VERSION.tar.bz2|cut -d ' ' -f1)
-echo "Size     :"$SIZE" to be used in JSON"
 
 #get sha256 checksum
 SHA256=$(sha256sum prusa3dboards-$VERSION.tar.bz2|cut -d ' ' -f1)
-echo "SHA256 checksum:"$SHA256" to be used in JSON"
+
+
+echo "Version         :"$VERSION" to build"
+echo "ArchiveFileName :"prusa3dboards-"$VERSION".tar.bz2"
+echo "SHA256 checksum :"$SHA256" to be used in JSON"
+echo "Size            :"$SIZE" to be used in JSON"
