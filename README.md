@@ -148,16 +148,17 @@ After modifying the source code please follow these steps:
           "toolsDependencies": []
         },
 ```
-  - Copy and paste thsi section twice
-  - Modify the top one with new values
-    - change `"version": "1.1.0",` `"version": "<version shown by Prepare-new-version.sh>",
-    - change in `"url":` and `"archiveFileName":` the "ArchiveFileName" parts you got from `Prepare-new-version.sh`
-    - if you have your own github for of this repository and you made a new worktree/branch to test your code you should not forget to modify the `"url":` to your `branch`
-    - change in `"checksum": ` the "SHA256 checksum" you got from `Prepare-new-version.sh`
-    - change in `"size":` the "Size" you got from `Prepare-new-version.sh`
-  - double check the syntax/format of the JSON file. In Notepad++ makes it is quite easy by using the [+] and [-] to see if your changes are good.
+
+- Copy and paste thsi section twice
+- Modify the top one with new values
+  - change `"version": "1.1.0",` `"version": "<version shown by Prepare-new-version.sh>",
+  - change in `"url":` and `"archiveFileName":` the "ArchiveFileName" parts you got from `Prepare-new-version.sh`
+  - if you have your own github for of this repository and you made a new worktree/branch to test your code you should not forget to modify the `"url":` to your `branch`
+  - change in `"checksum": ` the "SHA256 checksum" you got from `Prepare-new-version.sh`
+  - change in `"size":` the "Size" you got from `Prepare-new-version.sh`
+- double check the syntax/format of the JSON file. In Notepad++ makes it is quite easy by using the [+] and [-] to see if your changes are correct.
 
 When you have an own github and work localy use `git status` to verify your status.
 - You may need to use `git add IDE_Board_Manager/prusa3dboards-<version>.tar.bz2`
-- You need to commit your changes with `git commit -a`. Please try to document your changes as detailed as possible
+- You need to commit your changes with `git commit -a`. Please try to document your changes as detailed as possible.
 
