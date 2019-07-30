@@ -1,7 +1,7 @@
 # Prusa Research AVR Boards
 Prusa Research AVR Boards definitions for Arduino compatible boards manufactured/used by Prusa Research
-- (Prusa MM Control board)[https://github.com/prusa3d/MM-control-2.0]
-- Prusa Einsy and miniRAMBo boards by Ultimachine (Einsy)[https://github.com/ultimachine/Einsy-Rambo] and (miniRAMBo)[https://github.com/ultimachine/Mini-Rambo]
+- [Prusa MM Control board](https://github.com/prusa3d/MM-control-2.0)
+- Prusa Einsy and miniRAMBo boards by Ultimachine [Einsy](https://github.com/ultimachine/Einsy-Rambo) and [miniRAMBo](https://github.com/ultimachine/Mini-Rambo)
 
 # Table of contents
 
@@ -21,7 +21,7 @@ Prusa Research AVR Boards definitions for Arduino compatible boards manufactured
 ## Windows
 ### Using Linux subsystem under Windows 10 64-bit
 _notes: Script and instructions contributed by 3d-gussner. Use at your own risk. Script downloads Arduino executables outside of Prusa control. Report problems [there.](https://github.com/3d-gussner/Arduino_Boards/issues)._
-- follow the Microsoft guide https://docs.microsoft.com/en-us/windows/wsl/install-win10
+- follow the [Microsoft guide](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 - Tested versions are at this moment
   - Ubuntu other may different
   - After the installation and reboot please open your Ubuntu bash and do following steps
@@ -47,8 +47,8 @@ _notes: Script and instructions contributed by 3d-gussner. Use at your own risk.
 
 ### Using Git-bash under Windows 10 64-bit
 _notes: Script and instructions contributed by 3d-gussner. Use at your own risk. Script downloads Arduino executables outside of Prusa control. Report problems [there.](https://github.com/3d-gussner/Prusa-Firmware/issues) Multi language build is supported._
-- Download and install the 64bit Git version https://git-scm.com/download/win
-- Also follow these instructions https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058
+- Download and install the [64bit Git version](https://git-scm.com/download/win)
+- Also follow these [instructions](https://gist.github.com/evanwill/0207876c3243bbb6863e65ec5dc3f058)
 
 #### Compile Prusa-firmware with Git-bash installed
 - open Git-bash
@@ -59,27 +59,34 @@ _notes: Script and instructions contributed by 3d-gussner. Use at your own risk.
 
 # 2-How-to-modify
 Folder Structure:
-.
-├── IDE_Boards_Manager
-│   ├── prusa3dboards          Please don't change that folder name when you update your Github and post a PR.
-│   ├── bootloaders
-│       ├── prusa_einsy_rambo  Which is a clone of https://github.com/prusa3d/stk500v2-prusa 
-│       ├── prusa_mm_control
-│   ├── cores
-│       ├── prusa_einsy_rambo
-│   ├── variants
-│       ├── prusa_einsy_rambo
-│       ├── prusa_mm_control
 
-
-
+    .
+    ├── IDE_Boards_Manager
+    │   ├──  prusa3dboards         Please don't change that folder name when you update your Github and post a PR.
+    │   ├── bootloaders
+    │       ├── prusa_einsy_rambo  Which is a clone of https://github.com/prusa3d/stk500v2-prusa 
+    │       └── prusa_mm_control
+    │   ├── cores
+    │       └── prusa_einsy_rambo
+    │   ├── variants
+    │       ├── prusa_einsy_rambo
+    │       └── prusa_mm_control
+    │   └── ... 
+    └── ...
+    
 Files:
-.
-├── IDE_Boards_Manager
-│   ├── boards.txt` contains definitions for the boards (board name, parameters for building and uploading sketches, etc.). More information (here)[https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification#boardstxt]
-│   ├── platform.txt`contains definitions for the CPU architecture used (compiler, build process parameters, tools used for upload, etc.). More infotmation (here)[https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification#platformtxt]
-│   ├── package_prusa3d_index.json` More inforation (here)[https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.6.x-package_index.json-format-specification]
-│   └── prusa3dboards.version` contains the release version numbers and is used in `Prepare-new-version.sh`. The first line is used.
+
+    .
+    ├── IDE_Boards_Manager
+    ├── boards.txt contains definitions for the boards (board name, parameters for building and uploading sketches, etc.). 
+    ├── platform.txtcontains definitions for the CPU architecture used (compiler, build process parameters, tools used for upload, etc.).
+    ├── package_prusa3d_index.json
+    ├── prusa3dboards.version contains the release version numbers and is used in `Prepare-new-version.sh`. The first line is used.
+    └── ...
+    
+More information [boards.txt](https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification#boardstxt)
+More information [platforms.txt](https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification#platformtxt)
+More information [package_prusa3d_index.jso](https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.6.x-package_index.json-format-specification)
 
 Naming convention for version:
 <`major:#1`.`minor:#2`.`maintenance:#2`"-`devel status:0-4`-`devel build:#6`" where `-devel status` and `devel build` are optional
