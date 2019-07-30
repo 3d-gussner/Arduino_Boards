@@ -15,7 +15,7 @@ Prusa Research AVR Boards definitions for Arduino compatible boards manufactured
 <!--te-->
 
 
-#1-Build
+# 1-Build
 ## Linux
 
 ## Windows
@@ -57,7 +57,7 @@ _notes: Script and instructions contributed by 3d-gussner. Use at your own risk.
 - run `bash Prepare-new-version.sh`
 - Read How-to-modify `package_prusa3d_index.json` below
 
-#2-How-to-modify
+# 2-How-to-modify
 Folder Structure:
 -IDE_Boards_Manager
  |-prusa3dboards          Please don't change that folder name when you update your Github and post a PR.
