@@ -59,22 +59,27 @@ _notes: Script and instructions contributed by 3d-gussner. Use at your own risk.
 
 # 2-How-to-modify
 Folder Structure:
--IDE_Boards_Manager
- |-prusa3dboards          Please don't change that folder name when you update your Github and post a PR.
-   |-bootloaders
-     |-prusa_einsy_rambo  Which is a clone of https://github.com/prusa3d/stk500v2-prusa 
-     |-prusa_mm_control
-   |-cores
-     |-prusa_einsy_rambo
-   |-variants
-     |-prusa_einsy_rambo
-     |-prusa_mm_control
+.
+├── IDE_Boards_Manager
+│   ├── prusa3dboards          Please don't change that folder name when you update your Github and post a PR.
+│   ├── bootloaders
+│       ├── prusa_einsy_rambo  Which is a clone of https://github.com/prusa3d/stk500v2-prusa 
+│       ├── prusa_mm_control
+│   ├── cores
+│       ├── prusa_einsy_rambo
+│   ├── variants
+│       ├── prusa_einsy_rambo
+│       ├── prusa_mm_control
+
+
 
 Files:
-- `/IDE_Boards_Manager/boards.txt` contains definitions for the boards (board name, parameters for building and uploading sketches, etc.). More information (here)[https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification#boardstxt]
-- `/IDE_Boards_Manager/platform.txt`contains definitions for the CPU architecture used (compiler, build process parameters, tools used for upload, etc.). More infotmation (here)[https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification#platformtxt]
-- `/IDE_Boards_Manager/package_prusa3d_index.json` More inforation (here)[https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.6.x-package_index.json-format-specification]
-- `/IDE_Boards_Manager/prusa3dboards.version` contains the release version numbers and is used in `Prepare-new-version.sh`. The first line is used.
+.
+├── IDE_Boards_Manager
+│   ├── boards.txt` contains definitions for the boards (board name, parameters for building and uploading sketches, etc.). More information (here)[https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification#boardstxt]
+│   ├── platform.txt`contains definitions for the CPU architecture used (compiler, build process parameters, tools used for upload, etc.). More infotmation (here)[https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification#platformtxt]
+│   ├── package_prusa3d_index.json` More inforation (here)[https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.6.x-package_index.json-format-specification]
+│   └── prusa3dboards.version` contains the release version numbers and is used in `Prepare-new-version.sh`. The first line is used.
 
 Naming convention for version:
 <`major:#1`.`minor:#2`.`maintenance:#2`"-`devel status:0-4`-`devel build:#6`" where `-devel status` and `devel build` are optional
