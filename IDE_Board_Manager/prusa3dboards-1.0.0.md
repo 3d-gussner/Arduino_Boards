@@ -9,11 +9,6 @@ Folder Structure:
 
     .
     ├── IDE_Boards_Manager
-    │   ├── prusa3dboards          Please don't change that folder name when you update your Github and post a PR.
-    │   ├── bootloaders
-    │       └── prusa_mm_control
-    │   ├── variants
-    │       └── prusa_mm_control
     │   └── ... 
     └── ...
     
