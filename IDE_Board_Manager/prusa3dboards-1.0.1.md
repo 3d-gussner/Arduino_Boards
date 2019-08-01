@@ -6,6 +6,10 @@
 - [Einsy board](https://github.com/ultimachine/Einsy-Rambo/tree/1.1a) using prusa3drambo-1.0.1.tar.bz2
 - [miniRAMbo](https://github.com/ultimachine/Mini-Rambo/tree/master)  using prusa3drambo-1.0.1.tar.bz2
 
+## Specials/Limits
+- Restricted to use avr-gcc version `4.9.2-atmel3.5.4-arduino2`
+- Restricted to use avrdude version `6.3.0-arduino9`
+
 Folder Structure:
 
     .
