@@ -9,8 +9,6 @@
 
 # Get version from prusa3dboards.version file
 VERSION=$(head -1 prusa3dboards.version|cut -d ' ' -f1)
-echo "Version   :"$VERSION" to build"
-
 # rename temporaray "prusa3dboards" folder to include version number
 mv prusa3dboards prusa3dboards-$VERSION
 # compress prusa3dboards-$VERSION folder
@@ -24,7 +22,14 @@ SIZE=$(wc -c prusa3dboards-$VERSION.tar.bz2|cut -d ' ' -f1)
 SHA256=$(sha256sum prusa3dboards-$VERSION.tar.bz2|cut -d ' ' -f1)
 
 
-echo "Version         :"$VERSION" to build"
-echo "ArchiveFileName :"prusa3dboards-"$VERSION".tar.bz2"
-echo "SHA256 checksum :"$SHA256" to be used in JSON"
-echo "Size            :"$SIZE" to be used in JSON"
+echo "Version         : "$VERSION" to build"
+echo ""
+echo "Please don't forget to create new version file prusa3dboards-"$VERSION".MD"
+sleep 5
+echo "Please use following values to edit JSON file"
+echo ""
+echo "ArchiveFileName : prusa3dboards-"$VERSION".tar.bz2"
+echo "SHA256 checksum : "$SHA256
+echo "Size            : "$SIZE
+echo "online          : prusa3dboards-"$VERSION".MD"
+

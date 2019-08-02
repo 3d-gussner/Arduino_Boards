@@ -12,14 +12,14 @@
         {
           "name": "Prusa Research AVR Boards",
           "architecture": "avr",
-          "version": "1.0.2-a",
+          "version": "1.0.2-0-66",
           "category": "Contributed",
-          "url": "https://raw.githubusercontent.com/3d-gussner/Arduino_Boards/V1.0.2_merged_boards/IDE_Board_Manager/prusa3dboards-1.0.2-a.tar.bz2",
-          "archiveFileName": "prusa3dboards-1.0.2-a.tar.bz2",
-          "checksum": "SHA-256:7d49c48d86644513bd2f2222024934e827783f9f5be160c8a1ae14e177d0393a",
-          "size": "120855",
+          "url": "https://raw.githubusercontent.com/3d-gussner/Arduino_Boards/V1.0.2_merged_boards/IDE_Board_Manager/prusa3dboards-1.0.2-0-66-a.tar.bz2",
+          "archiveFileName": "prusa3dboards-1.0.2-0-66.tar.bz2",
+          "checksum": "SHA-256:5546226911d3565976440c811312b36ef078b21cc67d8e34569cd011fb36a53d",
+          "size": "101269",
           "help": {
-            "online": "https://github.com/3d-gussner/Arduino_Boards/blob/V1.0.2_merged_boards/IDE_Board_Manager/prusa3dboards-1.0.2.md"
+            "online": "https://github.com/3d-gussner/Arduino_Boards/blob/V1.0.2_merged_boards/IDE_Board_Manager/prusa3dboards-1.0.2-0-66.md"
           },
           "boards": [
             {
