@@ -3,8 +3,8 @@
 ## Boards supported
 - [Prusa MM control board](https://github.com/prusa3d/MM-control-2.0) using prusa3dboards-1.0.0.tar.bz2
   - including bootloader
-- [Einsy board](https://github.com/ultimachine/Einsy-Rambo/tree/1.1a) using prusa3drambo-1.0.1.tar.bz2
-- [miniRAMbo](https://github.com/ultimachine/Mini-Rambo/tree/master)  using prusa3drambo-1.0.1.tar.bz2
+- [Einsy board](https://reprap.org/wiki/EinsyRambo) using prusa3drambo-1.0.1.tar.bz2
+- [miniRAMbo](https://reprap.org/wiki/MiniRambo)  using prusa3drambo-1.0.1.tar.bz2
 
 ## Specials/Limits
 - Restricted to use avr-gcc version `4.9.2-atmel3.5.4-arduino2`
