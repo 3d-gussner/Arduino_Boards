@@ -51,12 +51,12 @@ prusa_einsy_rambo.name=PrusaResearch Einsy RAMBo
 prusa_einsy_rambo.vid.0=0x27b1
 prusa_einsy_rambo.pid.0=0x0001
 
-prusa_einsy_rambo.upload.tool=arduino:avrdude
+prusa_einsy_rambo.upload.tool=avrdude
 prusa_einsy_rambo.upload.protocol=wiring
 prusa_einsy_rambo.upload.maximum_size=253952
 prusa_einsy_rambo.upload.speed=115200
 
-prusa_einsy_rambo.bootloader.tool=arduino:avrdude
+prusa_einsy_rambo.bootloader.tool=avrdude
 prusa_einsy_rambo.bootloader.low_fuses=0xFF
 prusa_einsy_rambo.bootloader.high_fuses=0xD8
 prusa_einsy_rambo.bootloader.extended_fuses=0xFD
