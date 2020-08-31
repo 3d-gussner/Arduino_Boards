@@ -1,3 +1,4 @@
+1.0.4   # ifdef HAS_SYSTEM_TIMER_0 setting
 1.0.3   # Fix "timer0_fract = 0;" warning
 1.0.2   # With bootloader and compiler.c.elf.extra_flags for Prusa Einsy/RAMBo Prusa Frimware
 1.0.1   # Added Einsy/miniRAMBo boards
