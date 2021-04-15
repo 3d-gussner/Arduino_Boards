@@ -61,12 +61,12 @@
           "architecture": "avr",
           "version": "1.0.2",
           "category": "Contributed",
-          "url": "https://raw.githubusercontent.com/prusa3d/Arduino_Boards/master/IDE_Board_Manager/prusa3dboards-1.0.2.tar.bz2",
+          "url": "https://raw.githubusercontent.com/prusa3d/Arduino_Boards/MK404_boards/IDE_Board_Manager/prusa3dboards-1.0.2.tar.bz2",
           "archiveFileName": "prusa3dboards-1.0.2.tar.bz2",
           "checksum": "SHA-256:e7ff02ea51fba6a5dadfb7b14eb53f61f106f2412c0f0d95f64accc37945d82a",
           "size": "101087",
           "help": {
-            "online": "https://github.com/prusa3d/Arduino_Boards/blob/master/IDE_Board_Manager/prusa3dboards-1.0.2.md"
+            "online": "https://github.com/prusa3d/Arduino_Boards/blob/MK404_boards/IDE_Board_Manager/prusa3dboards-1.0.2.md"
           },
           "boards": [
             {
