@@ -1,3 +1,4 @@
+1.0.4   # Reduce gcc7 warnings, rework compiler flags, linker script by @wavexx
 1.0.3   # Fix "timer0_fract = 0;" warning
 1.0.2   # With bootloader and compiler.c.elf.extra_flags for Prusa Einsy/RAMBo Prusa Frimware
 1.0.1   # Added Einsy/miniRAMBo boards
