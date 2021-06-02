@@ -14,7 +14,7 @@
 - Fix gcc7 warnings, rework compiler flags and add linker script
 
 Folder Structure:
-
+```
 .
 └── IDE_Board_Manager
     └── prusa3dboards
@@ -27,9 +27,9 @@ Folder Structure:
         └── variants
             ├── prusa_einsy_rambo
             └── prusa_mm_control
-
+```
 File Structure:
-
+```
 .
 ├── IDE_Board_Manager
 │   ├── package_prusa3d_index.json
@@ -126,3 +126,4 @@ File Structure:
 │   └── prusa3drambo-1.0.1.tar.bz2
 ├── LICENSE
 └── README.md
+```
